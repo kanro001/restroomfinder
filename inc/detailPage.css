@@ -1,0 +1,33 @@
+@CHARSET "ISO-8859-1";
+
+.finder_items{
+	border: 1px solid #555;
+	border-radius: 3%;
+	width:300px;
+	//height: 450px;
+	//-webkit-flex-flow:column wrap;
+	//-webkit-flex:1 1;
+	margin:40pt;
+	padding:5px;
+	max-height:600pt;
+	overflow-y:auto;
+}
+.finder_items > img{
+	width: inherit;
+	height: auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+.finder_items{
+	opacity: .9;
+	-webkit-transform: scale(1.0);
+	-webkit-transition-timing-function: linear;
+	-webkit-transition-duration: 2s;
+	
+}
+.finder_items:hover{
+	opacity: 1;
+	-webkit-transform: scale(1.05);
+	-webkit-transition-timing-function: linear;
+	-webkit-transition-duration: 2s;
+}

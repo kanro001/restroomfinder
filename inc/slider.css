@@ -1,0 +1,171 @@
+
+/*
+* Color, Border, and Button Rules
+*/
+.finder_contentslider {
+	padding:10px; /* This acts as a border for the content slider */
+	background:#333; /* This is the color of said border */
+
+	background: #5715f9;
+	background-clip: padding-box;
+	border: 1px solid #172b4e;
+	border-bottom-color: #142647;
+	border-radius: 5px;
+	background-image: linear-gradient(left bottom, rgb(82,75,179) 13%, rgb(133,0,133) 84%);
+	background-image: -o-linear-gradient(left bottom, rgb(82,75,179) 13%, rgb(133,0,133) 84%);
+	background-image: -moz-linear-gradient(left bottom, rgb(82,75,179) 13%, rgb(133,0,133) 84%);
+	background-image: -webkit-linear-gradient(left bottom, rgb(82,75,179) 13%, rgb(133,0,133) 84%);
+	background-image: -ms-linear-gradient(left bottom, rgb(82,75,179) 13%, rgb(133,0,133) 84%);
+
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	right top,
+	color-stop(0.13, rgb(82,75,179)),
+	color-stop(0.84, rgb(133,0,133))
+	);
+}
+.finder_cs_wrapper, .finder_cs_article {
+
+}
+.finder_cs_leftBtn, .finder_cs_rightBtn {
+	width:30px; /* Should be as wide as the button graphic being used */
+	background:#333; /* This will probably match the contentslider bg color */
+}
+
+/*
+* Article styles (font)
+*/
+.finder_cs_article h2 a {
+	color:#333;
+	text-decoration:none;
+}
+.finder_cs_article p {
+	color:#777;
+}
+.finder_cs_article a img{
+	height: 100%;
+	background: #5715f9;
+	border: 1px solid #172b4e;
+	border-bottom-color: #142647;
+	border-radius: 5px;
+}
+
+/*
+******************************************************************************
+* These styles may be affected by the plugin, so avoid changing them if 
+* it's not absolutely necessary.
+******************************************************************************
+*/
+.finder_contentslider {
+	//position:relative;
+	//display:block;
+	width:900px;
+	height:400px;
+	margin:50px auto;
+	overflow:hidden;
+	/* make sure it has the highest z-index */
+	position:absolute;
+	z-index:5000; 
+	/* hide it by default */
+	display:none;
+}
+.finder_cs_wrapper {
+	position:relative;
+	display:block;
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+.finder_cs_slider {
+	position:absolute;
+	width:10000px;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+.finder_cs_article {
+	float:left;
+	position:relative;
+	top:0;
+	left:0;
+	display:block;
+	width:900px;
+	height:400px;
+	margin:0 auto;
+	padding:0;
+}
+.finder_cs_article h2 {
+	display:block;
+	width:26%;
+	margin:10px 26px 5px 67%;
+	text-align:left;
+	}
+.finder_cs_article img {
+	position:absolute;
+	top:0;
+	left:0;
+	width:66%;
+	border:0;
+	-ms-interpolation-mode:bicubic;
+}
+.finder_cs_article p {
+	display:block;
+	width:26%;
+	margin:0 26px 5px 67%;
+	padding:0;
+	border:0;
+}
+.finder_cs_article .finder_readmore {
+	display:block;
+	width:26%;
+	margin:0 6% 1% 68%;
+	text-align:right;
+}
+.finder_cs_leftBtn, .finder_cs_rightBtn {
+
+	//background: #5715f9;
+	position:absolute;
+	top:0;
+	height:400px;
+	padding:10px 0;
+	z-index:10000;
+}
+.finder_cs_leftBtn {
+	background-color: rgb(82,75,179);
+	left:0;
+	outline:0;
+	border: 0px solid #172b4e;
+	border-bottom-color: #142647;
+	border-radius: 5px;
+}
+.finder_cs_rightBtn {
+	background-color: rgb(133,0,133);
+	right:0;
+	outline:0;
+	border: 0px solid #172b4e;
+	border-bottom-color: #142647;
+	border-radius: 5px;
+}
+.finder_cs_leftBtn img, .finder_cs_rightBtn img {
+	border:0;
+	position:relative;
+	top:200px;
+	margin:0;
+}
+.finder_cs_leftBtn > div{
+	left: 1.0em;
+	border:0;
+	position:relative;
+	top:200px;
+	margin:0;
+}
+.finder_cs_rightBtn > div {
+	left:0.5em;
+	border:0;
+	position:relative;
+	top:200px;
+	margin:0;
+}
